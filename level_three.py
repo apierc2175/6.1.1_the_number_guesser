@@ -10,10 +10,10 @@ for i in range(5):
         break
     elif(user_number > computer_num):
         print("The computer guess is too high! The computer guessed ", computer_num)
-        computer_num = random.randint(computer_num,101)
+        computer_num = random.randint(computer_num,user_number)
     elif(user_number < computer_num):
         print("The computer guess is too low! The computer guessed ", computer_num)
-        computer_num = random.randint(1,computer_num)
+        computer_num = random.randint(user_number,computer_num)
 
     if i == 4:
         print('The computer is out of guesses. You win!')
